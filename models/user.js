@@ -17,6 +17,12 @@ module.exports = function (sequelize, DataTypes) {
             validate: {
             is: /^(?=.*\d).{5,}$/i,
             }
-        },
+        }
+        // Role: {
+        //     type: DataTypes.STRING,
+        //     allowNull: false,
+        //     defaultValue: 'basic',
+        //     enum: ['basic', 'admin', 'airline']
+        // }
     });
 };
